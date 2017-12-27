@@ -3,6 +3,9 @@ connect-button {
   span {
     text-transform: uppercase;
   }
+  .bold {
+    text-transform: uppercase;
+  }
   > .btn {
     min-height: 45px;
     z-index: 1;
@@ -19,7 +22,6 @@ connect-button {
       margin-top: -3px;
     }
   }
-
 }
 
 button.btn:not(.note-btn) {
@@ -47,12 +49,5 @@ button.btn:not(.note-btn) {
 .btn-group-lg.btn-group-justified.in-middle {
   connect-button > .btn {
     border-radius: 0;
-  }
-
-  .btn-group {
-
-  }
-  &.rounded {
-
   }
 }
