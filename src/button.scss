@@ -1,0 +1,58 @@
+connect-button {
+  display: inline;
+  span {
+    text-transform: uppercase;
+  }
+  > .btn {
+    min-height: 45px;
+    z-index: 1;
+    i {
+      position: absolute;
+      left: 14px;
+      top: 14px;
+    }
+    i.fa-google {
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+      margin-left: -15px;
+      margin-top: -3px;
+    }
+  }
+
+}
+
+button.btn:not(.note-btn) {
+  &:not(.btn-rounded) {
+    border-radius: 50px;
+  }
+  &.not-round {
+    border-radius: 4px;
+  }
+  transition: all 1s ease-in-out;
+  &:hover {
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.btn-group:not(.note-btn-group) {
+  border-radius: 5px;
+  &:hover {
+  }
+  .btn {
+    box-shadow: none !important;
+  }
+}
+
+.btn-group-lg.btn-group-justified.in-middle {
+  connect-button > .btn {
+    border-radius: 0;
+  }
+
+  .btn-group {
+
+  }
+  &.rounded {
+
+  }
+}
