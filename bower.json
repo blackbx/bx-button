@@ -5,13 +5,22 @@
     "Patrick Clover <patrick@blackbx.io>"
   ],
   "description": "",
-  "main": "dist/button.js",
+  "main": [
+    "dist/button.js",
+    "dist/button.css"
+  ],
   "dependencies": {
     "angular": ">=1.2.18"
   },
   "license": "MIT",
   "ignore": [
+    "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "src",
+    "test",
+    "gulpfile.js",
+    "karma.conf.js",
+    "examples"
   ]
 }
