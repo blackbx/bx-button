@@ -7,8 +7,7 @@
   "description": "",
   "main": [
     "dist/button.js",
-    "dist/button.css",
-    "dist/loading.css"
+    "dist/button.css"
   ],
   "dependencies": {
     "angular": ">=1.2.18"
