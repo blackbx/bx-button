@@ -1,0 +1,24 @@
+{
+  "name": "bx-button",
+  "homepage": "https://github.com/blackbx/bx-button",
+  "authors": [
+    "Patrick Clover <patrick@blackbx.io>"
+  ],
+  "description": "",
+  "main": [
+    "src/button.js",
+    "src/button.scss",
+    "src/loading.scss"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.18"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
