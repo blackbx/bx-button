@@ -6,9 +6,9 @@
   ],
   "description": "",
   "main": [
-    "src/button.js",
-    "src/button.scss",
-    "src/loading.scss"
+    "dist/button.js",
+    "dist/button.scss",
+    "dist/loading.scss"
   ],
   "dependencies": {
     "angular": ">=1.2.18"
