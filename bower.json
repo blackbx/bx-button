@@ -5,10 +5,7 @@
     "Patrick Clover <patrick@blackbx.io>"
   ],
   "description": "",
-  "main": [
-    "dist/button.js",
-    "dist/button.css"
-  ],
+  "main": "dist/button.js",
   "dependencies": {
     "angular": ">=1.2.18"
   },
