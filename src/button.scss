@@ -1,9 +1,6 @@
-connect-button {
+.bx-button {
   display: inline;
   span {
-    text-transform: uppercase;
-  }
-  .bold {
     text-transform: uppercase;
   }
   > .btn {
@@ -47,7 +44,7 @@ button.btn:not(.note-btn) {
 }
 
 .btn-group-lg.btn-group-justified.in-middle {
-  connect-button > .btn {
+  .bx-button > .btn {
     border-radius: 0;
   }
 }
