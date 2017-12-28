@@ -7,7 +7,8 @@ const concatCss    = require('gulp-concat-css');
 
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
-gulp.task('default', ['styles', 'scripts']);
+gulp.task('html', html);
+gulp.task('default', ['styles', 'scripts', 'html']);
 
 function styles() {
     return gulp
@@ -17,6 +18,12 @@ function styles() {
         .pipe(postcss([autoprefixer()]))
         .pipe(sourcemaps.write())
         .pipe(concatCss('button.css'))
+        .pipe(gulp.dest('dist'));
+}
+
+function html() {
+    return gulp
+        .src('src/*.html')
         .pipe(gulp.dest('dist'));
 }
 
