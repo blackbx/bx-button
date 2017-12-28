@@ -7,11 +7,11 @@ const concatCss            = require('gulp-concat-css');
 const angularTemplatecache = require('gulp-angular-templatecache');
 const del                  = require('del');
 
+gulp.task('default', ['clean', 'styles', 'html', 'scripts']);
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
 gulp.task('html', html);
 gulp.task('clean', clean);
-gulp.task('default', ['clean', 'styles', 'scripts', 'html']);
 
 function styles() {
     return gulp
@@ -27,10 +27,11 @@ function styles() {
 function html() {
     return gulp
         .src('src/*.html')
-        .pipe(angularTemplatecache('html.js', {
-            module: 'bx.button'
+        .pipe(angularTemplatecache('buttonHtml.js', {
+            module    : 'bx.button',
+            standAlone: true
         }))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('src'));
 }
 
 function scripts() {
